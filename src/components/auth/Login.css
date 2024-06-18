@@ -1,3 +1,23 @@
+.container-login {
+    width: 45vw;
+}
+
+.container-login input {
+    width: 25vw;
+}
+
+.container-login label {
+    text-align: left;
+}
+
 .reg-link {
     text-decoration: underline;
+}
+
+.login-btn {
+    margin-top: 1rem;
+}
+
+.register-txt {
+    margin-top: 1rem;
 }

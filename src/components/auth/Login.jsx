@@ -51,17 +51,15 @@ export const Login = () => {
                 autoFocus
               />
             </div>
-          </fieldset>
-          <fieldset>
             <div className="form-group">
               <button className="login-btn btn-info" type="submit">
                 Sign in
               </button>
             </div>
-          </fieldset>
+          </fieldset>         
         </form>
       </section>
-      <section>
+      <section className="register-txt">
         <span>New User? <Link className="reg-link" to="/register">Register</Link></span>
       </section>
     </main>
