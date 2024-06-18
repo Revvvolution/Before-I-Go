@@ -1,5 +1,9 @@
+@import url("https://fonts.googleapis.com/css2?family=Playwrite+AU+TAS:wght@100..400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Lobster&display=swap");
+
 :root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-family: "Lobster", "Caveat", cursive, "Playwrite AU TAS", cursive, Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
 
@@ -11,6 +15,15 @@
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+  --buff: #D5A18D;
+  --melon: #E0A992;
+  --wheat: #F6FFB6;
+  --lemon-chiffon: #DCD8D1;
+  --battleship: #929188;
+  --gray-battle: #828E8C;
+  --slate-gray: #6A8587;
+  --jet: #363330;
 }
 
 a {
