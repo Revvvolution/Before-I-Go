@@ -18,6 +18,7 @@ export const Login = () => {
           "creator_user",
           JSON.stringify({
             id: user.id,
+            name: user.name,
             viewcode: user.viewcode
           })
         )
@@ -32,8 +33,10 @@ export const Login = () => {
   return (
     <main className="container-login">
       <section>
-        <div>
-            <h1>Before I Go</h1>
+        <div className="header-container-login">
+              <figure className="site-logo-login-container">
+                <img className="site-logo-login" src="src\images\BeforeIGo_logo.png" alt="Site Logo" />
+              </figure>
             <h2>Digital Family Memory Platform</h2>
         </div>
         <form className="form-login" onSubmit={handleLogin}>

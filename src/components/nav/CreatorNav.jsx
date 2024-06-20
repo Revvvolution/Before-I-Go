@@ -3,9 +3,14 @@ import { useNavigate } from "react-router-dom"
 import "./Nav.css"
 
 export const CreatorNav = () => {
-    const navigate = useNavigate
+    const navigate = useNavigate()
 
     return (
+        <div className="navbar-container">
+          <figure className="site-logo-container">
+            <img className="site-logo" src="src\images\BeforeIGo_logo.png" alt="Site Logo"
+                  onClick={() => {navigate("/")}} />
+          </figure>
         <ul className="navbar">
             <li className="navbar-item">
                 <Link to='/journal'>My Journal</Link>
@@ -36,6 +41,7 @@ export const CreatorNav = () => {
             ""
             )}
         </ul>
+        </div>
     )
 }
 

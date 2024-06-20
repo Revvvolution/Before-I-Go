@@ -18,7 +18,8 @@
 
   --buff: #D5A18D;
   --melon: #E0A992;
-  --wheat: #F6FFB6;
+  --wheat: #d6e27c;
+  --hover-wheat: #edf7a3;
   --lemon-chiffon: #DCD8D1;
   --battleship: #929188;
   --gray-battle: #828E8C;
@@ -41,6 +42,10 @@ body {
   place-items: center;
   min-width: 320px;
   min-height: 100vh;
+  border: 5px solid black;
+  border-inline-start-color: var(--jet);
+  border-inline-end-color: var(--jet);
+  background: linear-gradient(to bottom, var(--battleship) 11%, var(--buff), var(--lemon-chiffon), var(--melon), var(--buff), var(--battleship));
 }
 
 h1 {
@@ -76,6 +81,6 @@ button:focus-visible {
     color: #747bff;
   }
   button {
-    background-color: #f9f9f9;
+    background-color: var(--lemon-chiffon);
   }
 }
