@@ -45,7 +45,7 @@ body {
   border: 5px solid black;
   border-inline-start-color: var(--jet);
   border-inline-end-color: var(--jet);
-  background: linear-gradient(to bottom, var(--battleship) 11%, var(--buff), var(--lemon-chiffon), var(--melon), var(--buff), var(--battleship));
+  background: linear-gradient(to bottom, var(--battleship), var(--lemon-chiffon), var(--battleship) 80%, var(--buff) 99%);
 }
 
 h1 {

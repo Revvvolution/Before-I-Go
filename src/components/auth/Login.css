@@ -42,6 +42,13 @@ fieldset {
 
 .form-group {
     margin-bottom: 1rem;
+    display: inline-block;
+}
+
+.form-group-pass {
+    margin-bottom: 1rem;
+    margin-left: 1.5rem;
+    display: inline-block;
 }
 
 .container-login label {
@@ -67,4 +74,24 @@ fieldset {
 
 .register-txt {
     margin-top: 1rem;
+}
+
+.bi-eye-slash {
+    margin-left: 10px;
+}
+
+.bi-eye-slash:hover {
+    cursor: pointer;
+    box-shadow: 0 0 20px 5px rgb(255, 255, 255, 0.25);
+    background-color: rgb(255, 255, 255, 0.25);
+}
+
+.bi-eye {
+    margin-left: 10px;
+}
+
+.bi-eye:hover {
+    cursor: pointer;
+    box-shadow: 0 0 20px 5px rgb(255, 255, 255, 0.25);
+    background-color: rgb(255, 255, 255, 0.25);
 }
