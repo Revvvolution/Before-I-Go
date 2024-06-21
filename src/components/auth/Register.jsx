@@ -66,7 +66,7 @@ export const Register = (props) => {
         <h1>Before I Go</h1>
         <h2>Please Register</h2>
         <fieldset>
-          <div className="form-group">
+          <div className="form-group-reg">
             <input
               onChange={updateCreator}
               type="text"
@@ -79,7 +79,7 @@ export const Register = (props) => {
           </div>
         </fieldset>
         <fieldset>
-          <div className="form-group">
+          <div className="form-group-reg">
             <input
               onChange={updateCreator}
               type="email"
@@ -91,7 +91,7 @@ export const Register = (props) => {
           </div>
         </fieldset>
         <fieldset>
-          <div className="form-group-pass">
+          <div className="form-group-reg-pass">
             <input
               onChange={updateCreator}
               type={showPassword ? 'text' : 'password'}
@@ -109,7 +109,7 @@ export const Register = (props) => {
                 ></i>
         </fieldset>
         <fieldset>
-          <div className="form-group">
+          <div className="form-group-reg">
             <button className="login-btn btn-info" type="submit">
               Register
             </button>
