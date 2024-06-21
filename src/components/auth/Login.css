@@ -42,10 +42,14 @@ fieldset {
 
 .form-group {
     margin-bottom: 1rem;
+}
+
+.form-group-reg {
+    margin-bottom: 1rem;
     display: inline-block;
 }
 
-.form-group-pass {
+.form-group-reg-pass {
     margin-bottom: 1rem;
     margin-left: 1.5rem;
     display: inline-block;

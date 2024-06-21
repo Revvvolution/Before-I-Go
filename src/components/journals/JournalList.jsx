@@ -11,6 +11,8 @@ export const JournalList = ({ currentUser }) => {
     const [journalList, setJournalList] = useState([])
     const [creatorJournal, setCreatorJournal] = useState([])
 
+    const navigate = useNavigate();
+
     useEffect(() => {
 
         getAllJournals().then(journals => {
