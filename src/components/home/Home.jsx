@@ -27,7 +27,7 @@ export const Home = ({ currentUser }) => {
             <hr></hr>
             <h1>My Page - Home</h1>
             <hr></hr>
-            <h2>Welcome back, {fName}!</h2>
+            <h2>Welcome, {fName}!</h2>
             </div>
         </>
     )
