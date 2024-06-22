@@ -34,23 +34,24 @@ export const PhotoMemories = ({ currentUser }) => {
         setActivePhotoId(photoId === activePhotoId ? null : photoId)
     }
 
+
     return (
         <>
         <section className="photo-memory-page" key={currentUser.viewcode}>
-        <div className="memory-card">
                 {currentCreatorPhotos?.map((photo) => (
-                    <figure className="photo-container" key={photo.image}>
-                    <img
-                        className="pMemo-photo"
-                        key={photo.id} 
-                        src={photo.image} 
-                        alt=""
-                        // onClick={() => handlePhotoClick(photo.id)}
-                    />
-                    </figure>
-                        // {/* {activePhotoId === photo.id && <p>{photo.comment}</p>} */}
+                    <div className="memory-card">
+                        <figure className="photo-container" key={photo.image} photoId={photo.id}>
+                        <img
+                            className="pMemo-photo"
+                            key={photo.id} 
+                            src={photo.image} 
+                            alt=""
+                            onClick={() => handlePhotoClick(photo.id)}
+                        />
+                        </figure>
+                        <p className="p-comment">{photo.comment}</p>                    
+                    </div>
                 ))}
-        </div>
         </section>
         </>
     )

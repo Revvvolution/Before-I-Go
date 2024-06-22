@@ -41,7 +41,7 @@ export const Login = () => {
         </div>
         <form className="form-login" onSubmit={handleLogin}>
           <fieldset>
-          <h2>Please sign in</h2>
+          <h2>Please Sign in</h2>
             <div className="form-group">
                 <label htmlFor="email">Email: </label>
               <input
