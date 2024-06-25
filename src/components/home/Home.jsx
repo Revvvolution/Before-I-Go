@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom"
+import { Link, useNavigate } from "react-router-dom"
 import "./Home.css"
 import { useEffect, useState } from "react"
 import { getCreatorById } from "../../services/userService.jsx"
@@ -6,6 +6,8 @@ import { getCreatorById } from "../../services/userService.jsx"
 export const Home = ({ currentUser }) => {
 
     const [creator, setCreator] = useState([])
+
+    const navigate = useNavigate()
 
     useEffect(() => {
 
@@ -28,6 +30,14 @@ export const Home = ({ currentUser }) => {
             <h1>My Page - Home</h1>
             <hr></hr>
             <h2>Welcome, {fName}!</h2>
+            </div>
+
+            <div className="create-container">
+                <figure className="new-journal-container">
+                    <img className="journal-logo" src="https://www.pikpng.com/pngl/b/356-3567628_quill-and-ink-png.png" alt="Journal Logo"
+                        onClick={() => {navigate("/journal/new-entry")}} />
+                    <figcaption>New Journal Entry</figcaption>
+                </figure>
             </div>
         </>
     )

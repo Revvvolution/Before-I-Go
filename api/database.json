@@ -92,6 +92,20 @@
       "title": "Quisquam distinctio ut qui non sed.",
       "entry": "Voluptates culpa sequi repellat nobis esse dolorem. Ad voluptatum voluptas qui aut nesciunt voluptas est dolore enim. Iure quia iusto.",
       "date": "1718649105204"
+    },
+    {
+      "userId": 2,
+      "title": "Today, I Saw Something...",
+      "entry": "I walked out of my barber shop today, minding my own business. Out of nowhere, up comes this man in a Viking helmet straight-up Flavor-Flav-style... and asked me for ten dollars. After declining, he made a brief battle cry and started jogging down the sidewalk in a galloping motion. Well, that's Charleston for you!",
+      "date": "2024-06-25T16:07:51.959Z",
+      "id": 10
+    },
+    {
+      "id": 11,
+      "userId": 2,
+      "title": "Test ",
+      "entry": "Testing Id placement in object POST",
+      "date": "2024-06-25T16:27:45.613Z"
     }
   ],
   "photo-memories": [
