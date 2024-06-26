@@ -56,6 +56,10 @@ figcaption {
     justify-content: center;
 }
 
+h2 {
+    font-size: 30px;
+}
+
 .icon-photo {
     background: radial-gradient(#EEE5CA 60%, rgb(0, 0, 0, 0.15))
 }

@@ -3,13 +3,17 @@ import "./JournalList.css"
 import React from "react";
 import { useNavigate } from "react-router-dom";
 import { getAllJournals } from "../../services/journalService.jsx";
+/* import { Button, Modal, ModalHeader, ModalBody, ModalFooter } from 'reactstrap'; */
 
 
 
 export const JournalList = ({ currentUser }) => {
 
-    const [journalList, setJournalList] = useState([])
-    const [creatorJournal, setCreatorJournal] = useState([])
+    const [journalList, setJournalList] = useState([]);
+    const [creatorJournal, setCreatorJournal] = useState([]);
+    const [modal, setModal] = useState(false);
+
+    const toggle = () => setModal(!modal);
 
     const navigate = useNavigate();
 
@@ -55,14 +59,41 @@ export const JournalList = ({ currentUser }) => {
             const formattedDate = formatDate(currentJournal.date);
 
             return <div key={currentJournal.id} className="journal-card">
-                <h1 className="journal-title">{currentJournal.title}</h1>
+                <span className="journal-edit">edit</span>
+
+                <i className=" bi-trash journal-delete" onClick={toggle} />
+
+                    <h1 className="journal-title">
+                        {currentJournal.title}
+                    </h1>
                 <div className="entry-box">
                     <div className="journal-entry">{currentJournal.entry}</div>
                 </div>
                 <div className="journal-date">{formattedDate}</div>
-                </div>
+            </div>
         })}
         </section>
         </>
     )
 }
+
+
+
+
+{/* Modal function for clickable delete button */}
+/*                 <div>
+                    <Modal isOpen={modal} toggle={toggle} centered={true} backdrop="static" fullscreen="sm" tabIndex={-10}>
+                        <ModalHeader toggle={toggle}>Confirm Deletion</ModalHeader>
+                        <ModalBody>
+                            Are you sure you want to delete this journal entry? It can't be recovered once removed.
+                        </ModalBody>
+                        <ModalFooter>
+                        <Button color="danger" onClick={toggle}>
+                            Yes, Delete
+                        </Button>{' '}
+                        <Button color="secondary" onClick={toggle}>
+                            Cancel
+                        </Button>
+                        </ModalFooter>
+                    </Modal>
+                </div> */

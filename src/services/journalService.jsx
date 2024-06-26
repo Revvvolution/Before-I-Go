@@ -14,6 +14,11 @@ export const createJournalEntry = (journalObj) => {
     })
 }
 
+export const getJournalById = (journalObjId) => {
+    return fetch(`http://localhost:8088/journals/${journalObjId}`)
+    .then((res) => res.json())
+}
+
 export const updateJournalEntry = (journalObj) => {
     return fetch(`http://localhost:8088/journals/${journalObj.id}`, {
         method: "PUT",

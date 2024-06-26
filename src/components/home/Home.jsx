@@ -27,9 +27,9 @@ export const Home = ({ currentUser }) => {
         <>
             <div className="home-greeting">
             <hr></hr>
-            <h1>My Page - Home</h1>
-            <hr></hr>
+            <h1>Before I Go - Home</h1>
             <h2>Welcome, {fName}!</h2>
+            <hr></hr>
             </div>
 
             <div className="create-container">
