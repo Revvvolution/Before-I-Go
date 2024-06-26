@@ -7,3 +7,59 @@ hr {
 .home-greeting > * {
     color: var(--jet);
 }
+
+.create-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: fit-content;
+}
+
+.new-entry-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 15vw;
+    height: 35vh;
+
+    /* border: 2px solid rgba(255, 255, 255, 0.212); */
+
+}
+
+.clickable-icon {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    box-shadow: 0px 0px 7px 2.5px rgba(0, 0, 0, 0.275);
+}
+
+.clickable-icon:hover {
+    cursor: pointer;
+    box-shadow: 0px 0px 4px 2.5px rgba(255, 255, 255, 0.275);
+}
+
+.new-entry-container:hover {
+    cursor: pointer;
+    color:rgb(236, 221, 200);
+    text-shadow: 1px 1px var(--jet);
+    width: 14.95vw;
+    height: 34.95vh;
+}
+
+figcaption {
+    padding-top: 0.2rem;
+    font-size: larger;
+    display: flex;
+    justify-content: center;
+}
+
+.icon-photo {
+    background: radial-gradient(#EEE5CA 60%, rgb(0, 0, 0, 0.15))
+}
+
+.icon-photo:hover {
+    background: radial-gradient(#EEE5CA, rgb(0, 0, 0, 0.25));
+}

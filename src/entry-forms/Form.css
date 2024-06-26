@@ -1,0 +1,24 @@
+.form-label__title {
+    font-size: 20px;
+    padding-right: 0.3rem;
+}
+
+.form-label__entry {
+    display: block;
+    font-size: 24px;
+    margin-bottom: 0.5rem;
+}
+
+.form-entry {
+    height: fit-content;
+    width: 40vw;
+}
+
+.form-title {
+    width: 20vw;
+}
+
+.form-btn {
+    background-color: navajowhite;
+    box-shadow: 0 0 2px 1.5px rgba(180, 150, 109, 0.3);
+}
