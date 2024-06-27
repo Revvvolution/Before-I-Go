@@ -10,7 +10,8 @@
 }
 
 .journal-card {
-    border: 1px solid rgb(0, 0, 0, 0.2);
+    border-top: 4px outset rgb(0, 0, 0, 0.3);
+    border-bottom: 4px inset rgb(0, 0, 0, 0.4);
     margin: 2rem 0.3rem 2rem 0.3rem;
     padding-bottom: 10px;
     border-radius: 20px;

@@ -8,7 +8,7 @@ export const CreatorNav = () => {
     return (
         <div className="navbar-container">
           <figure className="site-logo-container">
-            <img className="site-logo" src="src\images\BeforeIGo_logo.png" alt="Site Logo"
+            <img className="site-logo" src="/images/BeforeIGo_logo.png" alt="Site Logo"
                   onClick={() => {navigate("/")}} />
           </figure>
         <ul className="navbar">

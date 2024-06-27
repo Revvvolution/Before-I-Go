@@ -1,5 +1,5 @@
 import { useEffect, useState, useRef } from "react";
-import "../../entry-forms/Form.css"
+import "../entry-forms/Form.css"
 import { useNavigate, useParams } from "react-router-dom";
 import { updateJournalEntry, getJournalById } from "../../services/journalService.jsx";
 
