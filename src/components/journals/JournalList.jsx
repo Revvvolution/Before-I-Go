@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import "./JournalList.css"
 import React from "react";
 import { useNavigate } from "react-router-dom";
-import { getAllJournals } from "../../services/journalService.jsx";
+import { getAllJournals, deleteJournalEntry } from "../../services/journalService.jsx";
 /* import { Button, Modal, ModalHeader, ModalBody, ModalFooter } from 'reactstrap'; */
 
 
@@ -11,9 +11,9 @@ export const JournalList = ({ currentUser }) => {
 
     const [journalList, setJournalList] = useState([]);
     const [creatorJournal, setCreatorJournal] = useState([]);
-    const [modal, setModal] = useState(false);
+    /* const [modal, setModal] = useState(false); */
 
-    const toggle = () => setModal(!modal);
+    /* const toggle = () => setModal(!modal); */
 
     const navigate = useNavigate();
 
@@ -24,7 +24,7 @@ export const JournalList = ({ currentUser }) => {
             setJournalList(journalList)
         })
 
-    }, [])
+    }, [creatorJournal])
 
     const getAndSetCreatorJournal = () => {
             const creatorJournal = journalList.filter(journals => journals.userId === currentUser.id)
@@ -44,10 +44,18 @@ export const JournalList = ({ currentUser }) => {
                 new Date(isoString).toISOString().slice(0, 4);
     }
 
+        //DELETE journal object feature
+    const handleDelete = (journalId) => {
+        deleteJournalEntry(journalId).then(() => {
+            window.alert("Journal entry successfully deleted")
+            getAndSetCreatorJournal()
+        })
+    }
+
 
     return(
         <>
-        <div className="create-container">
+        <div className="create-container__journal">
                 <figure className="new-entry-container__journal">
                     <img className="clickable-icon" src="https://www.pikpng.com/pngl/b/356-3567628_quill-and-ink-png.png" alt="Journal Logo"
                         onClick={() => {navigate("/journal/new-entry")}} />
@@ -59,9 +67,17 @@ export const JournalList = ({ currentUser }) => {
             const formattedDate = formatDate(currentJournal.date);
 
             return <div key={currentJournal.id} className="journal-card">
-                <span className="journal-edit">edit</span>
+                <span className="journal-edit"
+                      onClick={() => {
+                        navigate(`/journal/edit/${currentJournal.id}`)
+                      }}
+                      >
+                        edit
+                </span>
 
-                <i className=" bi-trash journal-delete" onClick={toggle} />
+                <i className=" bi-trash journal-delete"
+                   onClick={() => {handleDelete(currentJournal.id)}}
+                    />
 
                     <h1 className="journal-title">
                         {currentJournal.title}

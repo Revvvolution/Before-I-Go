@@ -103,9 +103,16 @@
     {
       "id": 11,
       "userId": 2,
-      "title": "Test ",
-      "entry": "Testing Id placement in object POST",
+      "title": "RE-Test",
+      "entry": "Testing updated entry placement in object PUT",
       "date": "2024-06-25T16:27:45.697Z"
+    },
+    {
+      "id": 12,
+      "userId": 2,
+      "title": "DELETE ME!!!",
+      "entry": "CLICK THE CAN!!!",
+      "date": "2024-06-27T15:36:59.825Z"
     }
   ],
   "photo-memories": [

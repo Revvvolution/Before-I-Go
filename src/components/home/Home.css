@@ -15,6 +15,7 @@ hr {
     align-items: center;
     width: 100%;
     height: fit-content;
+    margin-bottom: 5rem;
 }
 
 .new-entry-container {
@@ -45,8 +46,8 @@ hr {
     cursor: pointer;
     color:rgb(236, 221, 200);
     text-shadow: 1px 1px var(--jet);
-    width: 14.95vw;
-    height: 34.95vh;
+    width: 14.98vw;
+    height: 34.98vh;
 }
 
 figcaption {

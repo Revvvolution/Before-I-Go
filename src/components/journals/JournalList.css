@@ -1,3 +1,14 @@
+.create-container__journal {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: fit-content;
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+}
+
 .journal-card {
     border: 1px solid rgb(0, 0, 0, 0.2);
     margin: 2rem 0.3rem 2rem 0.3rem;
