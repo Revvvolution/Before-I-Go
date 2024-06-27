@@ -1,3 +1,14 @@
+.create-container__journal {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: fit-content;
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+}
+
 .journal-card {
     border: 1px solid rgb(0, 0, 0, 0.2);
     margin: 2rem 0.3rem 2rem 0.3rem;
@@ -30,4 +41,28 @@
     color:rgb(236, 221, 200);
     text-shadow: 1px 1px var(--jet);
     width: 9.95vw;
+}
+
+.journal-edit {
+    float: left;
+    padding: 0.5rem 0 0 0.5rem;
+    font-family: "Playwrite AU TAS", cursive, Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+}
+
+.journal-edit:hover {
+    cursor: pointer;
+    text-decoration: underline;
+    color:rgb(236, 221, 200);
+    text-shadow: 1px 1px var(--jet);
+}
+
+.journal-delete {
+    float: right;
+    padding: 0.5rem 0.5rem 0 0;
+}
+
+.journal-delete:hover {
+    cursor: pointer;
+    color:var(--buff);
+    text-shadow: 1px 1px var(--jet);
 }

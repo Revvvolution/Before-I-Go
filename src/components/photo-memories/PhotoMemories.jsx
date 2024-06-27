@@ -39,11 +39,10 @@ export const PhotoMemories = ({ currentUser }) => {
         <>
         <section className="photo-memory-page" key={currentUser.viewcode}>
                 {currentCreatorPhotos?.map((photo) => (
-                    <div className="memory-card">
-                        <figure className="photo-container" key={photo.image} photoId={photo.id}>
+                    <div className="memory-card" key={photo.id}>
+                        <figure className="photo-container" key={photo.image}>
                         <img
-                            className="pMemo-photo"
-                            key={photo.id} 
+                            className="pMemo-photo" 
                             src={photo.image} 
                             alt=""
                             onClick={() => handlePhotoClick(photo.id)}

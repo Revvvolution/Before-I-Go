@@ -22,3 +22,8 @@
     background-color: navajowhite;
     box-shadow: 0 0 2px 1.5px rgba(180, 150, 109, 0.3);
 }
+
+.form-btn:hover {
+    background-color: rgb(233, 203, 161);
+    box-shadow: 0 0 2px 1.5px rgba(180, 150, 109, 0.3);
+}

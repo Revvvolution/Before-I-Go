@@ -27,9 +27,9 @@ export const Home = ({ currentUser }) => {
         <>
             <div className="home-greeting">
             <hr></hr>
-            <h1>My Page - Home</h1>
-            <hr></hr>
+            <h1>Before I Go - Home</h1>
             <h2>Welcome, {fName}!</h2>
+            <hr></hr>
             </div>
 
             <div className="create-container">
@@ -44,9 +44,9 @@ export const Home = ({ currentUser }) => {
                     <figcaption>New Photo Memory</figcaption>
                 </figure>
                 <figure className="new-entry-container">
-                    <img className="clickable-icon icon-about" src="https://images.unsplash.com/photo-1452421822248-d4c2b47f0c81?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="About Logo"
+                    <img className="clickable-icon icon-about" src="src\images\about-icon.png" alt="About Logo"
                         onClick={() => {navigate("/about-me/new-entry")}} />
-                    <figcaption>New About Me Entry</figcaption>
+                    <figcaption className="about-y">New About Me Entry</figcaption>
                 </figure>
             </div>
         </>
