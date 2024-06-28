@@ -1,56 +1,44 @@
-import { useEffect, useState, useRef } from "react";
-import "../entry-forms/Form.css"
-import { useNavigate, useParams } from "react-router-dom";
-import { updateAboutEntry, getAboutEntryById } from "../../services/aboutService.jsx";
+import { useState, useRef } from "react";
+import "./Form.css"
+import React from "react";
+import { createAboutEntry } from "../../services/aboutService.jsx";
+import { useNavigate } from "react-router-dom";
 
-export const EditAbout = ({ currentUser }) => {
+export const AboutMeForm = ({ currentUser }) => {
     const [aboutEntry, setAboutEntry] = useState({ title: "", entry: "" })
     const [text, setText] = useState("")
     const textAreaRef = useRef(null)
 
-    const {aboutMeObjId} = useParams()
-
     const navigate = useNavigate()
 
-    useEffect (() => {
-        getAboutEntryById(aboutMeObjId).then((about) => {
-            setAboutEntry(about)
-        })
-    }, [])
-
-
-    const handleEdit = (event) => {
+    const handleSave = (event) => {
         event.preventDefault()
 
         if (aboutEntry.entry && aboutEntry.title) {
-            const editedAboutEntry = {
-                id: aboutEntry.id,
+            const newAboutEntry = {
+                id: "",
                 userId: currentUser.id,
                 title: aboutEntry.title,
                 entry: aboutEntry.entry,
             }
 
-            updateAboutEntry(editedAboutEntry).then(() => {
+            createAboutEntry(newAboutEntry).then(() => {
                 navigate("/about-me")
             })
         } else {
-            window.alert("Please complete all fields before saving")
+            window.alert("Please complete all fields before submitting")
         }
     }
 
-
     const handleInputChange = (event) => {
-        setText(event.target.value);
-        textAreaRef.current.style.height = 'auto';
-        textAreaRef.current.style.height = `${textAreaRef.current.scrollHeight}px`;
-      };
+        setText(event.target.value)
+        textAreaRef.current.style.height = 'auto'
+        textAreaRef.current.style.height = `${textAreaRef.current.scrollHeight}px`
+    }
 
-
-
-      return (
-        <>
+    return (
         <form>
-        <h2>Edit About Me Entry</h2>
+        <h2>New About Me Entry</h2>
         <fieldset>
             <div className="form-group">
                 <label className="form-label form-label__title">
@@ -59,7 +47,6 @@ export const EditAbout = ({ currentUser }) => {
                     <input
                     type="text" 
                     className="form-control form-title" 
-                    value={aboutEntry?.title ? aboutEntry.title : ""}
                     placeholder="Enter your topic"
                     onChange={(event) => {
                         const aboutEntryCopy = {...aboutEntry}
@@ -74,7 +61,7 @@ export const EditAbout = ({ currentUser }) => {
                 <label className="form-label form-label__entry">Entry:</label>
                 <textarea
                     ref={textAreaRef}
-                    value={aboutEntry?.entry ? aboutEntry.entry : text}
+                    value={text}
                     rows="1"
                     type="text"
                     style={{
@@ -99,11 +86,11 @@ export const EditAbout = ({ currentUser }) => {
         </fieldset>
         <fieldset>
             <div className="form-group">
-                <button className="form-btn btn-info" onClick={handleEdit}>Save And Update</button>
+                <button className="form-btn btn-info" onClick={handleSave}>Submit</button>
             </div>
         </fieldset>
     </form>
-    </>
     )
+
 
 }

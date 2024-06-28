@@ -28,8 +28,8 @@ export const AboutList = ({ currentUser }) => {
 
     const getAndSetCreatorJournal = () => {
             const creatorAboutEntry = aboutList.filter(aboutObj => aboutObj.userId === currentUser.id)
-            const sortedJournal = creatorAboutEntry.sort((a,b) => a.date > b.date ? -1 : 1 )
-            setCreatorAboutEntry(sortedJournal)
+            const sortedAboutEntry = creatorAboutEntry.sort((a,b) => a.id > b.id ? -1 : 1 )
+            setCreatorAboutEntry(sortedAboutEntry)
     }
 
     useEffect(() => {
