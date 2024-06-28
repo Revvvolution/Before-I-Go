@@ -24,7 +24,7 @@ export const JournalList = ({ currentUser }) => {
             setJournalList(journalList)
         })
 
-    }, [creatorJournal])
+    }, [])
 
     const getAndSetCreatorJournal = () => {
             const creatorJournal = journalList.filter(journals => journals.userId === currentUser.id)
@@ -48,7 +48,7 @@ export const JournalList = ({ currentUser }) => {
     const handleDelete = (journalId) => {
         deleteJournalEntry(journalId).then(() => {
             window.alert("Journal entry successfully deleted")
-            getAndSetCreatorJournal()
+            window.location.reload()
         })
     }
 

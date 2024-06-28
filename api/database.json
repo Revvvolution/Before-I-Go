@@ -106,13 +106,6 @@
       "title": "RE-Test",
       "entry": "Testing updated entry placement in object PUT",
       "date": "2024-06-25T16:27:45.697Z"
-    },
-    {
-      "id": 12,
-      "userId": 2,
-      "title": "DELETE ME!!!",
-      "entry": "CLICK THE CAN!!!",
-      "date": "2024-06-27T15:36:59.825Z"
     }
   ],
   "photo-memories": [
@@ -225,6 +218,12 @@
       "userId": 3,
       "title": "voluptates id consequatur",
       "entry": "Nulla sit nostrum et expedita et maiores laboriosam numquam consequatur. Temporibus qui temporibus. Doloremque porro enim et sunt est. Minima eum perspiciatis aspernatur. Earum ab in id animi. Officiis aut veritatis consequuntur itaque itaque consequatur eaque."
+    },
+    {
+      "id": 10,
+      "userId": 2,
+      "title": "My Favorite Movies",
+      "entry": "I adore three quirky '80s and '90s films:\n\n- “Buckaroo Banzai”: Brain surgery meets epic guitar solos, and evil aliens? Just misunderstood dance enthusiasts.\n- “Aliens”: Ellen Ripley’s survival skills involve xenomorph juggling and sassy one-liners. Extraterrestrial diplomacy, anyone?\n- “The Terminator”: Forget the apocalypse; focus on the forbidden love and molten steel. Schwarzenegger impressions included.\nLife’s too short for serious sci-fi—pass the popcorn and let’s watch “E.T.”!"
     }
   ]
 }

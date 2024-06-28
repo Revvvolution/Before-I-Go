@@ -39,12 +39,12 @@ export const Home = ({ currentUser }) => {
                     <figcaption>New Journal Entry</figcaption>
                 </figure>
                 <figure className="new-entry-container">
-                    <img className="clickable-icon icon-photo" src="src\images\polaroid-frame.png" alt="Photo Logo"
+                    <img className="clickable-icon icon-photo" src="/images/polaroid-frame.png" alt="Photo Logo"
                         onClick={() => {navigate("/photo-memories/new-entry")}} />
                     <figcaption>New Photo Memory</figcaption>
                 </figure>
                 <figure className="new-entry-container">
-                    <img className="clickable-icon icon-about" src="src\images\about-icon.png" alt="About Logo"
+                    <img className="clickable-icon icon-about" src="/images/about-icon.png" alt="About Logo"
                         onClick={() => {navigate("/about-me/new-entry")}} />
                     <figcaption className="about-y">New About Me Entry</figcaption>
                 </figure>
