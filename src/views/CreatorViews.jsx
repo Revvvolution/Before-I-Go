@@ -6,6 +6,7 @@ import { PhotoMemories } from "../components/photo-memories/PhotoMemories.jsx"
 import { JournalForm } from "../components/entry-forms/JournalForm.jsx"
 import { EditJournal } from "../components/journals/EditJournal.jsx"
 import { PhotoMemoryForm } from "../components/entry-forms/PhotoMemoryForm.jsx"
+import { AboutList } from "../components/about-me/AboutList.jsx"
 
 
 
@@ -35,6 +36,12 @@ export const CreatorViews = ({ currentUser }) => {
             <Route path="photo-memories">
                 <Route index element={<PhotoMemories currentUser={currentUser} />} />
                 <Route path="new-entry" element={<PhotoMemoryForm currentUser={currentUser} />} />
+            </Route>
+
+            {/* About Me Route */}
+            <Route path="about-me">
+                <Route index element={<AboutList currentUser={currentUser} />} />
+                {/* <Route path="new-entry" element={<JournalForm currentUser={currentUser} />} />   DON'T FORGET TO IMPORT!*/}
             </Route>
 
             </Route>

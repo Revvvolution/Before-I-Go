@@ -1,0 +1,69 @@
+.create-container__about {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: fit-content;
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+.about-card {
+    border-top: 4px outset rgb(0, 0, 0, 0.3);
+    border-bottom: 4px inset rgb(0, 0, 0, 0.4);
+    margin: 2rem 0.3rem 2rem 0.3rem;
+    padding-bottom: 10px;
+    border-radius: 20px;
+    background: radial-gradient(#eee5cae0, rgb(0, 0, 0, 0.25) 95%);
+    box-shadow: 0 0 7px 3px rgb(0, 0, 0, 0.2);
+}
+
+.about-title {
+    font-size: 35px;
+    font-family: "Playwrite AU TAS", cursive, Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+    line-height: 1.5;
+    font-weight: 400;
+}
+
+.about-entry {
+    margin: 0 0.5rem 1rem 0.5rem;
+    font-family: "Caveat", cursive, Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+    font-size: 24px;
+}
+
+.new-entry-container__about {
+    width: 10vw;
+    height: fit-content;
+}
+
+.new-entry-container__about:hover {
+    cursor: pointer;
+    color:rgb(236, 221, 200);
+    text-shadow: 1px 1px var(--jet);
+    width: 9.95vw;
+}
+
+.about-edit {
+    float: left;
+    padding: 0.5rem 0 0 0.5rem;
+    font-family: "Playwrite AU TAS", cursive, Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+}
+
+.about-edit:hover {
+    cursor: pointer;
+    text-decoration: underline;
+    color:rgb(236, 221, 200);
+    text-shadow: 1px 1px var(--jet);
+}
+
+.about-delete {
+    float: right;
+    padding: 0.5rem 0.5rem 0 0;
+}
+
+.journal-delete:hover {
+    cursor: pointer;
+    color:var(--buff);
+    text-shadow: 1px 1px var(--jet);
+}
