@@ -50,7 +50,7 @@ export const AboutList = ({ currentUser }) => {
         <>
         <div className="create-container__about">
                 <figure className="new-entry-container__about">
-                    <img className="clickable-icon icon-about" src="public\images\about-icon.png" alt="About Me Logo"
+                    <img className="clickable-icon icon-about" src="/images/about-icon.png" alt="About Me Logo"
                         onClick={() => {navigate("/about-me/new-entry")}} />
                     <figcaption>New Entry</figcaption>
                 </figure>
