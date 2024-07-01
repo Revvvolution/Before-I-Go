@@ -66,3 +66,17 @@ h2 {
 .icon-photo:hover {
     background: radial-gradient(#EEE5CA, rgb(0, 0, 0, 0.25));
 }
+
+.vc-share-msg > * {
+    color: var(--jet);
+}
+
+.ul-vc {
+    font-size: 30px;
+    text-decoration: underline;
+    background: linear-gradient(to right, var(--battleship), var(--melon), var(--buff), var(--melon), var(--battleship));
+}
+
+.share-info {
+    font-size: 24px;
+}

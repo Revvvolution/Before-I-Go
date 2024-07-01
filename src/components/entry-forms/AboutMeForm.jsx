@@ -18,6 +18,7 @@ export const AboutMeForm = ({ currentUser }) => {
             const newAboutEntry = {
                 id: "",
                 userId: currentUser.id,
+                viewcode: currentUser.viewcode,
                 title: aboutEntry.title,
                 entry: aboutEntry.entry,
             }

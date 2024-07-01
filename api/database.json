@@ -20,19 +20,13 @@
       "email": "Bruen7@example.net",
       "password": "QjYrSixCl3Bn35M",
       "viewcode": "ee36ebeb-ab04-4cc7-a246-bde0f7b9caa9"
-    },
-    {
-      "id": 4,
-      "name": "Gatsby TheGreat",
-      "email": "great.gatsby@example.com",
-      "password": "IdoNOTchasemice",
-      "viewcode": "db9c76dd-0831-4a3d-8c95-d11c007060e6"
     }
   ],
   "journals": [
     {
       "id": 1,
       "userId": 1,
+      "viewcode": "30aac41b-1bf0-48df-9b83-cde9cd12baef",
       "title": "Tempore est ut quos iusto.",
       "entry": "Est est animi et minus iste. Aut omnis necessitatibus. In in non porro pariatur porro debitis tenetur.",
       "date": "2024-06-25T16:07:51.959Z"
@@ -40,6 +34,7 @@
     {
       "id": 2,
       "userId": 1,
+      "viewcode": "30aac41b-1bf0-48df-9b83-cde9cd12baef",
       "title": "In numquam odio ratione dicta ipsam.",
       "entry": "Et cupiditate quia explicabo qui et porro eius. Neque dolores quidem quo est odit quas expedita consequuntur dolorem. Ea aut voluptatem voluptas consequatur rerum dolores nam. Et a sed numquam eos ex qui iusto fugit. Sit ut eius nam dolorem est sunt officiis ullam sit. Labore assumenda maxime accusantium fuga et debitis deserunt pariatur inventore.",
       "date": "2024-06-25T16:07:51.959Z"
@@ -47,6 +42,7 @@
     {
       "id": 3,
       "userId": 1,
+      "viewcode": "30aac41b-1bf0-48df-9b83-cde9cd12baef",
       "title": "Praesentium itaque quis eos facilis delectus.",
       "entry": "Molestiae nisi ab sint repellat iusto assumenda voluptatem in perspiciatis. Nemo alias aliquid autem in. Quis est doloribus.",
       "date": "2024-06-25T16:07:51.959Z"
@@ -54,6 +50,7 @@
     {
       "id": 4,
       "userId": 2,
+      "viewcode": "23632a41-ccd4-4b62-9c0a-8cb064bfb7c8",
       "title": "Blanditiis error qui.",
       "entry": "Magni sed aliquam porro dolores voluptates. Et iusto deleniti. In autem atque velit recusandae nihil consectetur similique.",
       "date": "2024-06-19T16:07:51.959Z"
@@ -61,6 +58,7 @@
     {
       "id": 5,
       "userId": 2,
+      "viewcode": "23632a41-ccd4-4b62-9c0a-8cb064bfb7c8",
       "title": "Accusantium id sunt aspernatur et distinctio.",
       "entry": "Dolore rerum nemo maiores fugit labore. Quia est alias in provident. Eligendi ex nam. Vero repellendus repellendus excepturi sint voluptatem. Esse doloribus rem. Error ex sit qui sed deleniti vel temporibus velit debitis.",
       "date": "2024-06-20T16:07:51.959Z"
@@ -68,6 +66,7 @@
     {
       "id": 6,
       "userId": 2,
+      "viewcode": "23632a41-ccd4-4b62-9c0a-8cb064bfb7c8",
       "title": "Molestiae unde reiciendis optio consequuntur ad ratione nemo aspernatur.",
       "entry": "Qui aliquam et excepturi recusandae. Qui qui in consequatur error nostrum est.",
       "date": "2024-06-22T16:07:51.959Z"
@@ -75,6 +74,7 @@
     {
       "id": 7,
       "userId": 3,
+      "viewcode": "ee36ebeb-ab04-4cc7-a246-bde0f7b9caa9",
       "title": "Provident perspiciatis repellat error.",
       "entry": "Sunt voluptatem quo. Nihil voluptatem fuga est voluptatem. Libero vero praesentium sed est optio.",
       "date": "2024-06-25T16:07:51.959Z"
@@ -82,6 +82,7 @@
     {
       "id": 8,
       "userId": 3,
+      "viewcode": "ee36ebeb-ab04-4cc7-a246-bde0f7b9caa9",
       "title": "Et error et aliquid.",
       "entry": "Et ut ut impedit ut dolorem fugit repellat. Soluta accusantium est facilis nihil placeat harum consequatur hic fugit.",
       "date": "2024-06-25T16:07:51.959Z"
@@ -89,6 +90,7 @@
     {
       "id": 9,
       "userId": 3,
+      "viewcode": "ee36ebeb-ab04-4cc7-a246-bde0f7b9caa9",
       "title": "Quisquam distinctio ut qui non sed.",
       "entry": "Voluptates culpa sequi repellat nobis esse dolorem. Ad voluptatum voluptas qui aut nesciunt voluptas est dolore enim. Iure quia iusto.",
       "date": "2024-06-25T16:07:51.959Z"
@@ -96,6 +98,7 @@
     {
       "id": 10,
       "userId": 2,
+      "viewcode": "23632a41-ccd4-4b62-9c0a-8cb064bfb7c8",
       "title": "Today, I Saw Something...",
       "entry": "I walked out of my barber shop today, minding my own business. Out of nowhere, up comes this man in a Viking helmet straight-up Flavor-Flav-style... and asked me for ten dollars. After declining, he made a brief battle cry and started jogging down the sidewalk in a galloping motion. Well, that's Charleston for you!",
       "date": "2024-06-25T16:27:45.613Z"
@@ -103,63 +106,81 @@
     {
       "id": 11,
       "userId": 2,
+      "viewcode": "23632a41-ccd4-4b62-9c0a-8cb064bfb7c8",
       "title": "RE-Test",
       "entry": "Testing updated entry placement in object PUT",
       "date": "2024-06-25T16:27:45.697Z"
+    },
+    {
+      "id": 12,
+      "userId": 1,
+      "viewcode": "30aac41b-1bf0-48df-9b83-cde9cd12baef",
+      "title": "uuid test",
+      "entry": "testing uuid insertion",
+      "date": "2024-07-01T17:39:33.748Z"
     }
   ],
   "photo-memories": [
     {
       "id": 1,
       "userId": 1,
+      "viewcode": "30aac41b-1bf0-48df-9b83-cde9cd12baef",
       "image": "https://images.unsplash.com/photo-1542216765-0d6f4d23453c?q=80&w=1988&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-      "comment": "Qui sint dolores. Deleniti et soluta sint asperiores eius."
+      "comment": "This was my Great Grandma Gertrude as a little girl moving to our state with her family. In 1914, there weren't very many houses occupying land here. Crazy how it's grown into such a big city. You guys have all thrived in happiness here. So thankful for their choice long ago. Butterfly effects are a true thing of beauty at times."
     },
     {
       "id": 2,
       "userId": 1,
+      "viewcode": "30aac41b-1bf0-48df-9b83-cde9cd12baef",
       "image": "https://images.unsplash.com/photo-1718461858976-00142ae1f73e?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-      "comment": "Qui sapiente ab sint itaque cum qui iure est. Natus quod sint vero et molestiae. Qui deleniti accusamus aliquam eveniet culpa. Et voluptatem consectetur qui at est. Ea odit tempore."
+      "comment": "The only picture of the service facility my great and great-great grandparents worked at and eventually managed. The hard work they put in every day to get to build that business along with unconditional love is what paved the way for our family's success here for generations up to today. Never forget what it took to get us where we are. We all love you!"
     },
     {
       "id": 3,
       "userId": 1,
+      "viewcode": "30aac41b-1bf0-48df-9b83-cde9cd12baef",
       "image": "https://images.unsplash.com/photo-1611024847487-e26177381a3f?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-      "comment": "Nemo dolorem qui velit id ullam qui et culpa. Omnis atque dolore quaerat qui esse provident ab laborum molestiae. Cumque aut vero fugiat. Nihil nam ex id quae deleniti non explicabo consequatur nihil. Mollitia ut deleniti voluptatem magni aut. Aliquid dolorum ullam aspernatur."
+      "comment": "It didn't start with us, but it WILL continue. Never forget to try your hardest, LOVE what you do, and be kind. My favorite picture of my amazing family. I couldn't be more appreciative."
     },
     {
       "id": 4,
       "userId": 2,
+      "viewcode": "23632a41-ccd4-4b62-9c0a-8cb064bfb7c8",
       "image": "https://images.unsplash.com/photo-1577897113176-6888367369bf?q=80&w=1780&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       "comment": "Minus blanditiis inventore reprehenderit. Officia et et nesciunt nisi unde et rem eum. Illo perspiciatis voluptatem. Aspernatur qui et dolor."
     },
     {
       "id": 5,
       "userId": 2,
+      "viewcode": "23632a41-ccd4-4b62-9c0a-8cb064bfb7c8",
       "image": "https://images.unsplash.com/photo-1597524624057-0a3cba4d77b1?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       "comment": "Repellendus occaecati et est ipsa. Omnis consequuntur voluptatem alias quae."
     },
     {
       "id": 6,
       "userId": 2,
+      "viewcode": "23632a41-ccd4-4b62-9c0a-8cb064bfb7c8",
       "image": "https://images.unsplash.com/photo-1598669266873-91826dec22ca?q=80&w=1964&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       "comment": "Fugit quo tenetur ea velit incidunt quam non accusamus. Impedit dolor distinctio aut nam corrupti ab possimus quibusdam fuga."
     },
     {
       "id": 7,
       "userId": 3,
+      "viewcode": "ee36ebeb-ab04-4cc7-a246-bde0f7b9caa9",
       "image": "https://images.unsplash.com/photo-1509628061459-1328d06c2ced?q=80&w=1953&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       "comment": "Consectetur tempore porro. Ut necessitatibus id omnis sed quia sint et explicabo et. Qui odio delectus. Est nostrum non aperiam dolores culpa. Soluta est amet quae ut voluptatibus."
     },
     {
       "id": 8,
       "userId": 3,
+      "viewcode": "ee36ebeb-ab04-4cc7-a246-bde0f7b9caa9",
       "image": "https://images.unsplash.com/photo-1584847229707-76dfd0ddc919?q=80&w=1769&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       "comment": "Id temporibus dignissimos rerum sunt nobis repellendus. Corporis nostrum maxime. Quia similique sint ex qui eos sapiente magni est. Debitis voluptatem qui."
     },
     {
       "id": 9,
       "userId": 3,
+      "viewcode": "ee36ebeb-ab04-4cc7-a246-bde0f7b9caa9",
       "image": "https://images.unsplash.com/photo-1590527548172-295fdcb1bab0?q=80&w=1888&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       "comment": "Eos et dolore natus a facilis. Nulla nostrum vel nihil enim et molestiae aut aut. Magnam minus et velit temporibus architecto."
     }
@@ -168,60 +189,70 @@
     {
       "id": 1,
       "userId": 1,
+      "viewcode": "30aac41b-1bf0-48df-9b83-cde9cd12baef",
       "title": "officiis dicta impedit",
       "entry": "Perferendis veritatis placeat aspernatur sunt. Ipsa commodi ipsum quos. Repudiandae ad maxime. Non ut vero beatae quod. Sequi provident hic atque. Expedita rerum est eum."
     },
     {
       "id": 2,
       "userId": 1,
+      "viewcode": "30aac41b-1bf0-48df-9b83-cde9cd12baef",
       "title": "a consequuntur est",
       "entry": "Voluptatem et et. Et maiores amet debitis. Nam assumenda sit. Ullam consequatur facilis aut aut. Labore totam ullam ipsum consectetur dolor."
     },
     {
       "id": 3,
       "userId": 1,
+      "viewcode": "30aac41b-1bf0-48df-9b83-cde9cd12baef",
       "title": "voluptatem veniam ab",
       "entry": "Qui aliquam non unde. Tempora dignissimos nobis labore modi unde veniam sed facere. Et accusantium sapiente non eos voluptatum. Ipsa tempora incidunt. Dolorem voluptatem consequatur."
     },
     {
       "id": 4,
       "userId": 2,
+      "viewcode": "23632a41-ccd4-4b62-9c0a-8cb064bfb7c8",
       "title": "quia aliquid nemo",
       "entry": "Iure aperiam optio eaque qui nesciunt ex harum aut ut. Velit dolorem corrupti. Atque omnis quo et odit quam saepe. Tempore sunt et id accusantium similique eos dolorem quia vel."
     },
     {
       "id": 5,
       "userId": 2,
+      "viewcode": "23632a41-ccd4-4b62-9c0a-8cb064bfb7c8",
       "title": "molestiae sequi quae",
       "entry": "Ad ab voluptatem neque quas quis voluptate ipsa. Nihil nisi ut dolorem pariatur cupiditate. Non quidem reiciendis ex sapiente. Quaerat ducimus quas laboriosam repudiandae ipsam ducimus nobis et. Mollitia quo libero."
     },
     {
       "id": 6,
       "userId": 2,
+      "viewcode": "23632a41-ccd4-4b62-9c0a-8cb064bfb7c8",
       "title": "consequuntur autem dignissimos",
       "entry": "Et impedit et exercitationem labore iste magnam. Facilis eaque voluptatum distinctio voluptas sit recusandae nobis aliquam non. Aspernatur ut consequuntur debitis quia maiores. Sed vel labore voluptatem repudiandae error tenetur eaque quae temporibus. Fugiat beatae quia dolorem numquam dignissimos cum sint facere. Ipsam et suscipit."
     },
     {
       "id": 7,
       "userId": 3,
+      "viewcode": "ee36ebeb-ab04-4cc7-a246-bde0f7b9caa9",
       "title": "rerum quasi cupiditate",
       "entry": "Incidunt voluptas maxime sed illum. Iusto qui dolores minus. Ut vel numquam totam modi et nostrum qui voluptatem. Vitae et similique ut corrupti. Quibusdam qui magnam ratione temporibus cupiditate doloribus dignissimos dolore aspernatur."
     },
     {
       "id": 8,
       "userId": 3,
+      "viewcode": "ee36ebeb-ab04-4cc7-a246-bde0f7b9caa9",
       "title": "qui consequatur culpa",
       "entry": "Doloribus ea et sit. At nisi maxime nihil eum quasi asperiores quae. Itaque debitis fugiat facilis soluta facere vitae voluptas porro molestiae. Earum perspiciatis soluta quos."
     },
     {
       "id": 9,
       "userId": 3,
+      "viewcode": "ee36ebeb-ab04-4cc7-a246-bde0f7b9caa9",
       "title": "voluptates id consequatur",
       "entry": "Nulla sit nostrum et expedita et maiores laboriosam numquam consequatur. Temporibus qui temporibus. Doloremque porro enim et sunt est. Minima eum perspiciatis aspernatur. Earum ab in id animi. Officiis aut veritatis consequuntur itaque itaque consequatur eaque."
     },
     {
       "id": 10,
       "userId": 2,
+      "viewcode": "23632a41-ccd4-4b62-9c0a-8cb064bfb7c8",
       "title": "My Favorite Movies",
       "entry": "I adore three quirky '80s and '90s films:\n\n- “Buckaroo Banzai”: Brain surgery meets epic guitar solos, and evil aliens? Just misunderstood dance enthusiasts.\n- “Aliens”: Ellen Ripley’s survival skills involve xenomorph juggling and sassy one-liners. Extraterrestrial diplomacy, anyone?\n- “The Terminator”: Forget the apocalypse; focus on the forbidden love and molten steel. Schwarzenegger impressions included.\nLife’s too short for serious sci-fi—pass the popcorn and let’s watch “E.T.”!"
     }

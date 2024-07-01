@@ -4,6 +4,12 @@ export const getAllAboutEntries = () => {
 )
 }
 
+export const getAboutEntryByUserId = (userId) => {
+    return fetch(`http://localhost:8088/about-me?userId=${userId}`).then((res) =>
+    res.json()
+)
+}
+
 export const createAboutEntry = (aboutMeObj) => {
     return fetch(`http://localhost:8088/about-me`, {
         method: "POST",

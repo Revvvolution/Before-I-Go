@@ -4,6 +4,12 @@ export const getAllJournals = () => {
 )
 }
 
+export const getJournalsByUserId = (userId) => {
+    return fetch(`http://localhost:8088/journals?userId=${userId}`).then((res) =>
+    res.json()
+)
+}
+
 export const createJournalEntry = (journalObj) => {
     return fetch(`http://localhost:8088/journals`, {
         method: "POST",

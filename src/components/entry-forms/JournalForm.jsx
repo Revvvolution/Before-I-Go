@@ -18,6 +18,7 @@ export const JournalForm = ({ currentUser }) => {
             const newJournalEntry = {
                 id: "",
                 userId: currentUser.id,
+                viewcode: currentUser.viewcode,
                 title: journal.title,
                 entry: journal.entry,
                 date: new Date(),

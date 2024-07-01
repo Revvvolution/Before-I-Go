@@ -9,6 +9,7 @@ import { PhotoMemoryForm } from "../components/entry-forms/PhotoMemoryForm.jsx"
 import { AboutList } from "../components/about-me/AboutList.jsx"
 import { AboutMeForm } from "../components/entry-forms/AboutMeForm.jsx"
 import { EditAbout } from "../components/about-me/EditAbout.jsx"
+import { ShareViewCode } from "../components/share/ShareViewCode.jsx"
 
 
 
@@ -46,6 +47,9 @@ export const CreatorViews = ({ currentUser }) => {
                 <Route path="new-entry" element={<AboutMeForm currentUser={currentUser} />} />
                 <Route path="edit/:aboutMeObjId" element={<EditAbout currentUser={currentUser} />} />
             </Route>
+
+            {/* Share Viewcode Route */}
+            <Route path="share" element={<ShareViewCode currentUser={currentUser} />} />
 
             </Route>
         </Routes>
