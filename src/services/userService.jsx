@@ -11,7 +11,7 @@ export const getAllUsers = () => {
 }
 
 export const getCreatorById = (userId) => {
-    return fetch(`http://localhost:8088/users?userId=${userId}`)
+    return fetch(`http://localhost:8088/users?id=${userId}`)
     .then((res) => res.json())
 }
 

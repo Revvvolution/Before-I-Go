@@ -19,6 +19,7 @@ export const PhotoMemoryForm = ({ currentUser }) => {
             const newPhotoMemory = {
                 id: "",
                 userId: currentUser.id,
+                viewcode: currentUser.viewcode,
                 image: photoMemory.image,
                 comment: photoMemory.comment,
             }
@@ -60,9 +61,9 @@ export const PhotoMemoryForm = ({ currentUser }) => {
                         Image:
                     </label>
                         <input
-                        type="radio" 
+                        type="text" 
                         className="form-control form-image" 
-                        placeholder="Select an image"
+                        placeholder="Paste image URL"
                         /* onChange={handleImageUpload} */
                         onChange={(event) => {
                             const photoMemoryCopy = {...photoMemory}

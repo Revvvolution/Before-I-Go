@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react"
 import { CreatorViews } from "./CreatorViews.jsx"
-/* import { ViewerViews } from "./ViewerViews.jsx" */
+
 
 export const ApplicationViews = () => {
   const [currentUser, setCurrentUser] = useState({})
@@ -12,5 +12,5 @@ export const ApplicationViews = () => {
     setCurrentUser(creatorUserObject)
   }, [])
 
-  return currentUser ? <CreatorViews currentUser={currentUser} /> : ""/* <ViewerViews currentUser={currentUser}/> */;
+  return currentUser ? <CreatorViews currentUser={currentUser} /> : ""; /*<ViewerViews currentUser={currentUser}/> ; */
 }
