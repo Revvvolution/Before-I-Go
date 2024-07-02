@@ -36,6 +36,7 @@ export const ViewJournal = () => {
   return (
     <>
       <section className="journal-display">
+        <button className="btn-back" onClick={() => navigate(-1)}>Go Back</button>
         {journalList?.map((currentJournal) => {
           const formattedDate = formatDate(currentJournal.date);
 

@@ -27,6 +27,7 @@ export const ViewAbout = () => {
   return (
     <>
       <section className="about-display">
+      <button className="btn-back" onClick={() => navigate(-1)}>Go Back</button>
         {aboutList?.map((currentAboutObj) => {
           return (
             <div key={currentAboutObj.id} className="about-card">

@@ -21,6 +21,7 @@ export const ViewPhotoMemories = ({}) => {
 
   return (
     <>
+      <button className="btn-back" onClick={() => navigate(-1)}>Go Back</button>
       <section className="photo-memory-page">
         {currentCreatorPhotos?.map((photo) => (
           <div className="memory-card" key={photo.id}>

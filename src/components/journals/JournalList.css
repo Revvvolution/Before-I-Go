@@ -67,3 +67,16 @@
     color:var(--buff);
     text-shadow: 1px 1px var(--jet);
 }
+
+.btn-back {
+    margin: 2.5rem 1.2rem 2rem 1.2rem;
+    background-color: navajowhite;
+    box-shadow: 0 0 2px 1.5px rgba(180, 150, 109, 0.3);
+}
+
+.btn-back:hover {
+    box-shadow: 0 0 7px 2px rgba(255, 222, 173, 0.427);
+    color: cornsilk;
+    background-color: var(--buff);
+    text-shadow: -0.75px 0.75px var(--jet);
+}

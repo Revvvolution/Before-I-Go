@@ -12,7 +12,7 @@
       "name": "Jerome Johnson",
       "email": "Jerome.Johnson62@example.com",
       "password": "99TF_utvE6LP1mk",
-      "viewcode": "9ce8f0a8-35a1-4fc8-9491-070cfaac291b"
+      "viewcode": "b926e38e-4006-4973-b983-706f5298e7f2"
     },
     {
       "id": 3,
@@ -98,18 +98,9 @@
     {
       "id": 10,
       "userId": 2,
-      "viewcode": "23632a41-ccd4-4b62-9c0a-8cb064bfb7c8",
       "title": "Today, I Saw Something...",
       "entry": "I walked out of my barber shop today, minding my own business. Out of nowhere, up comes this man in a Viking helmet straight-up Flavor-Flav-style... and asked me for ten dollars. After declining, he made a brief battle cry and started jogging down the sidewalk in a galloping motion. Well, that's Charleston for you!",
       "date": "2024-06-25T16:27:45.613Z"
-    },
-    {
-      "id": 11,
-      "userId": 2,
-      "viewcode": "23632a41-ccd4-4b62-9c0a-8cb064bfb7c8",
-      "title": "RE-Test",
-      "entry": "Testing updated entry placement in object PUT",
-      "date": "2024-06-25T16:27:45.697Z"
     },
     {
       "id": 12,

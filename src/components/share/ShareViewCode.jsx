@@ -35,20 +35,22 @@ export const ShareViewCode = ({ currentUser }) => {
         <>
             <div className="vc-share-msg">
             <hr></hr>
-            <h1>Before I Go - Share My Viewcode Link</h1>
+            <h1>Before I Go - Shareable Link</h1>
             <p className="share-info">
-                Copy your personal shareable link below and share it with the <br/>people you'd like to have viewing access to your entries:
+                Copy your personal link below and share it with the <br/>people you'd like to have viewing access to your entries:
             </p>
             <h2 className="ul-vc">http://localhost:5173/view-home/{creator?.viewcode}</h2>
             <hr></hr>
             </div>
 
-            <div className="create-container">
+            <h2>Need to replace your link?</h2>
+            <div className="create-container-vc">
                 <button className="new-link"
                         onClick={(evt) => handleNewLink(evt)}>
                     New Link
                 </button>
             </div>
+                <p className="vc-warning">WARNING: Once a new link is generated, the previous link becomes invalid.</p>
         </>
     )
 }
