@@ -1,20 +1,22 @@
 import { useEffect, useState } from "react";
 import "./JournalList.css";
 import React from "react";
-import { useNavigate } from "react-router-dom";
+import { useLocation, useNavigate } from "react-router-dom";
 import {
   getJournalByViewcode,
 } from "../../services/viewerService.jsx";
+import { getJournalsByUserId } from "../../services/journalService.jsx";
 
 
 export const ViewJournal = () => {
   const [journalList, setJournalList] = useState([]);
 
+  const { state } = useLocation();
 
   const navigate = useNavigate();
 
   useEffect(() => {
-    getJournalByViewcode("30aac41b-1bf0-48df-9b83-cde9cd12baef").then((journals) => {
+    getJournalsByUserId(state.userId).then((journals) => {
       const sortedJournal = journals.sort((a, b) => (a.date > b.date ? -1 : 1));
       setJournalList(sortedJournal);
     });
@@ -34,6 +36,7 @@ export const ViewJournal = () => {
   return (
     <>
       <section className="journal-display">
+        <button className="btn-back" onClick={() => navigate(-1)}>Go Back</button>
         {journalList?.map((currentJournal) => {
           const formattedDate = formatDate(currentJournal.date);
 

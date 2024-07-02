@@ -1,8 +1,9 @@
 import { useEffect, useState } from "react";
 import "./About.css";
 import React from "react";
-import { useNavigate } from "react-router-dom";
+import { useLocation, useNavigate } from "react-router-dom";
 import { getAboutEntryByViewcode } from "../../services/viewerService.jsx";
+import { getAboutEntryByUserId } from "../../services/aboutService.jsx";
 /* import { Button, Modal, ModalHeader, ModalBody, ModalFooter } from 'reactstrap'; */
 
 export const ViewAbout = () => {
@@ -11,10 +12,12 @@ export const ViewAbout = () => {
 
   /* const toggle = () => setModal(!modal); */
 
+  const { state } = useLocation();
+
   const navigate = useNavigate();
 
   useEffect(() => {
-    getAboutEntryByViewcode("23632a41-ccd4-4b62-9c0a-8cb064bfb7c8").then(
+    getAboutEntryByUserId(state.userId).then(
       (aboutObj) => {
         setAboutList(aboutObj);
       }
@@ -24,6 +27,7 @@ export const ViewAbout = () => {
   return (
     <>
       <section className="about-display">
+      <button className="btn-back" onClick={() => navigate(-1)}>Go Back</button>
         {aboutList?.map((currentAboutObj) => {
           return (
             <div key={currentAboutObj.id} className="about-card">

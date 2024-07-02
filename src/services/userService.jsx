@@ -24,3 +24,22 @@ export const createUser = (user) => {
       body: JSON.stringify(user),
     }).then((res) => res.json())
 }
+
+export const getCreatorByViewcode = (viewcode) => {
+  return fetch(`http://localhost:8088/users?viewcode=${viewcode}`)
+  .then((res) => res.json())
+}
+
+export const changeViewcode = (userId) => {
+  console.log(userId)
+  const uuid = crypto.randomUUID()
+  console.log(uuid)
+
+  return fetch(`http://localhost:8088/users/${userId}`, {
+    method: "PATCH",
+    headers: {
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify({ viewcode: uuid }),
+  }).then((res) => res.json())
+}

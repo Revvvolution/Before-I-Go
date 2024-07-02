@@ -9,7 +9,7 @@ export const ViewerNav = () => {
         <div className="navbar-container-viewer">
           <figure className="site-logo-container">
             <img className="site-logo" src="/images/BeforeIGo_logo.png" alt="Site Logo"
-                  onClick={() => {navigate("/")}} />
+                  onClick={() => {navigate("/view-home")}} />
           </figure>
         <ul className="navbar-viewer">
             <li className="navbar-item">

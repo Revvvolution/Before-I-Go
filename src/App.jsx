@@ -8,6 +8,7 @@ import { ViewJournal } from './components/journals/ViewJournal.jsx'
 import { ViewPhotoMemories } from './components/photo-memories/ViewPhotoMemories.jsx'
 import { ViewAbout } from './components/about-me/ViewAbout.jsx'
 import { ViewerNav } from './components/nav/ViewerNav.jsx'
+import { ViewerHome } from './components/home/ViewerHome.jsx'
 
 export const App = () => {
   return (
@@ -16,9 +17,10 @@ export const App = () => {
       <Route path="/register" element={<Register />} /> 
 
       {/* Viewer Routes */}
-      <Route path="/view-journal" element={<> <ViewerNav /><ViewJournal /> </>} />
-      <Route path="/view-photo-memories" element={<> <ViewerNav /><ViewPhotoMemories /> </>} />
-      <Route path="/view-about-me" element={<> <ViewerNav /><ViewAbout /> </>} />
+      <Route path="/view-home/:viewcode" element={<> <ViewerHome /> </>} />
+      <Route path="/view-journal" element={<> <ViewJournal /> </>} />
+      <Route path="/view-photo-memories" element={<> <ViewPhotoMemories /> </>} />
+      <Route path="/view-about-me" element={<> <ViewAbout /> </>} />
 
 
       {/* Logged in User Routes */}
