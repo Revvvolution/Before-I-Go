@@ -3,9 +3,12 @@ import { Link } from "react-router-dom"
 import { useNavigate } from "react-router-dom"
 import "./Login.css"
 import { getCreatorByEmail } from "../../services/userService.jsx"
+import { getCreatorByViewcode } from "../../services/userService.jsx"
 
 export const Login = () => {
   const [email, set] = useState("Jerome.Johnson62@example.com")
+  const [viewcode, setViewcode] = useState("")
+
   const navigate = useNavigate()
 
   const handleLogin = (e) => {
@@ -29,6 +32,30 @@ export const Login = () => {
       }
     })
   }
+
+
+  const handleViewcodeSubmit = (e) => {
+    e.preventDefault()
+
+    getCreatorByViewcode(viewcode).then((foundViewcode) => {
+      if (foundViewcode.length === 1) {
+        const pageView = foundViewcode[0]  
+        localStorage.setItem(
+          "page-view",
+          JSON.stringify({
+            viewcode: pageView.viewcode,
+            name: pageView.name
+          })
+        )
+
+        navigate("/")
+      } else {
+        window.alert("Invalid viewcode")
+      }
+    })
+  }
+
+
 
   return (
     <main className="container-login">
@@ -62,9 +89,38 @@ export const Login = () => {
           </fieldset>         
         </form>
       </section>
+
+        {/* register new user link */}
       <section className="register-txt">
         <span>New User? <Link className="reg-link" to="/register">Register</Link></span>
       </section>
+
+        {/* viewcode entry form */}
+      <section>
+      <form className="form-vc" onSubmit={handleViewcodeSubmit}>
+        <fieldset>
+        <h2>Have a Viewcode?</h2>
+          <div className="form-group">
+              <label htmlFor="viewcode">Viewcode: </label>
+            <input
+              type="text"
+              value={viewcode}
+              onChange={(evt) => setViewcode(evt.target.value)}
+              className="form-control"
+              placeholder="Paste viewcode here"
+              required
+              autoFocus
+            />
+          </div>
+          <div className="form-group">
+            <button className="login-btn btn-info" type="submit">
+              Submit
+            </button>
+          </div>
+        </fieldset>         
+      </form>
+    </section>
+
     </main>
   )
 }

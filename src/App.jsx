@@ -16,9 +16,9 @@ export const App = () => {
       <Route path="/register" element={<Register />} /> 
 
       {/* Viewer Routes */}
-      <Route path="/view-journal" element={<> <ViewerNav /><ViewJournal /> </>} />
-      <Route path="/view-photo-memories" element={<> <ViewerNav /><ViewPhotoMemories /> </>} />
-      <Route path="/view-about-me" element={<> <ViewerNav /><ViewAbout /> </>} />
+      <Route path="/view-journal/:viewcode" element={<> <ViewJournal /> </>} />
+      <Route path="/view-photo-memories" element={<> <ViewPhotoMemories /> </>} />
+      <Route path="/view-about-me" element={<> <ViewAbout /> </>} />
 
 
       {/* Logged in User Routes */}

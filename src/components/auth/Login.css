@@ -99,3 +99,10 @@ fieldset {
     box-shadow: 0 0 20px 5px rgb(255, 255, 255, 0.25);
     background-color: rgb(255, 255, 255, 0.25);
 }
+
+.form-vc {
+    background-color: var(--lemon-chiffon);
+    border-radius: 20px;
+    box-shadow: 0px 0px 15px 1.5px rgba(0, 0, 0, 0.2);
+    margin-top: 1.5rem;
+}

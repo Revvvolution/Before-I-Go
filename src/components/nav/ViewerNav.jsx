@@ -13,13 +13,13 @@ export const ViewerNav = () => {
           </figure>
         <ul className="navbar-viewer">
             <li className="navbar-item">
-                <Link to='/view-journal'>My Journal</Link>
+                <Link to='/view-journal/:viewcodeParam'>My Journal</Link>
             </li>
             <li className="navbar-item">
-                <Link to='/view-photo-memories'>Photo Memories</Link>
+                <Link to='/view-photo-memories/:viewcodeParam'>Photo Memories</Link>
             </li>
             <li className="navbar-item">
-                <Link to='/view-about-me'>About Me</Link>
+                <Link to='/view-about-me/:viewcodeParam'>About Me</Link>
             </li>
         </ul>
         </div>

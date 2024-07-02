@@ -5,20 +5,22 @@ import { useNavigate } from "react-router-dom";
 import {
   getJournalByViewcode,
 } from "../../services/viewerService.jsx";
+import { useParams } from "react-router-dom";
 
 
 export const ViewJournal = () => {
   const [journalList, setJournalList] = useState([]);
 
+  const { viewcode } = useParams()
 
   const navigate = useNavigate();
 
   useEffect(() => {
-    getJournalByViewcode("30aac41b-1bf0-48df-9b83-cde9cd12baef").then((journals) => {
+    getJournalByViewcode(viewcode).then((journals) => {
       const sortedJournal = journals.sort((a, b) => (a.date > b.date ? -1 : 1));
       setJournalList(sortedJournal);
     });
-  }, []);
+  }, [viewcode]);
 
   const formatDate = (isoString) => {
     return (
@@ -42,7 +44,7 @@ export const ViewJournal = () => {
 
               <h1 className="journal-title">{currentJournal.title}</h1>
               <div className="entry-box">
-                <div className="journal-entry">{currentJournal.entry}</div>
+                <div className="journal-entry">{JSON.stringify(viewcodeparam)}{currentJournal.entry}</div>
               </div>
               <div className="journal-date">{formattedDate}</div>
             </div>

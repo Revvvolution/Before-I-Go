@@ -24,3 +24,8 @@ export const createUser = (user) => {
       body: JSON.stringify(user),
     }).then((res) => res.json())
 }
+
+export const getCreatorByViewcode = (viewcode) => {
+  return fetch(`http://localhost:8088/users?viewcode=${viewcode}`)
+  .then((res) => res.json())
+}
