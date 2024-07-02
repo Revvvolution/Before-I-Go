@@ -20,6 +20,13 @@
       "email": "Bruen7@example.net",
       "password": "QjYrSixCl3Bn35M",
       "viewcode": "ee36ebeb-ab04-4cc7-a246-bde0f7b9caa9"
+    },
+    {
+      "id": 4,
+      "name": "Gatsby TheGreat",
+      "email": "great.gatsby@example.com",
+      "password": "IdoNOTchaseMice",
+      "viewcode": "4562e79a-761e-4819-be20-6185badae6a5"
     }
   ],
   "journals": [
@@ -174,6 +181,20 @@
       "viewcode": "ee36ebeb-ab04-4cc7-a246-bde0f7b9caa9",
       "image": "https://images.unsplash.com/photo-1590527548172-295fdcb1bab0?q=80&w=1888&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       "comment": "Eos et dolore natus a facilis. Nulla nostrum vel nihil enim et molestiae aut aut. Magnam minus et velit temporibus architecto."
+    },
+    {
+      "id": 10,
+      "userId": 4,
+      "viewcode": "d2a92a41-eae8-4a2e-9ef8-a0be464a5c6d",
+      "image": "public/Gatsby_Album/g-1.JPG",
+      "comment": "My owner likes to hold me, but I never know what to do..."
+    },
+    {
+      "id": 11,
+      "userId": 4,
+      "viewcode": "d2a92a41-eae8-4a2e-9ef8-a0be464a5c6d",
+      "image": "https://images.unsplash.com/photo-1526336024174-e58f5cdd8e13?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "comment": "Is this my long-lost relative? A twin, even? Meowzers... this is strange. We even have the same spot beside our noses!\n"
     }
   ],
   "about-me": [
