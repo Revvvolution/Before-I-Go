@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { useNavigate } from "react-router-dom";
+import { useLocation, useNavigate } from "react-router-dom";
 import "./PhotoMemories.css";
 import { getPhotoMemoryByViewcode } from "../../services/viewerService.jsx";
 import { getPhotoMemoryByUserId } from "../../services/photoServices.jsx";
@@ -7,10 +7,12 @@ import { getPhotoMemoryByUserId } from "../../services/photoServices.jsx";
 export const ViewPhotoMemories = ({}) => {
   const [currentCreatorPhotos, setCurrentCreatorPhotos] = useState([]);
 
+  const { state } = useLocation();
+
   const navigate = useNavigate();
 
   useEffect(() => {
-    getPhotoMemoryByUserId(1).then(
+    getPhotoMemoryByUserId(state.userId).then(
       (pMemo) => {
         setCurrentCreatorPhotos(pMemo);
       }

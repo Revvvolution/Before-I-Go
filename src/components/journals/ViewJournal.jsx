@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import "./JournalList.css";
 import React from "react";
-import { useNavigate } from "react-router-dom";
+import { useLocation, useNavigate } from "react-router-dom";
 import {
   getJournalByViewcode,
 } from "../../services/viewerService.jsx";
@@ -11,11 +11,12 @@ import { getJournalsByUserId } from "../../services/journalService.jsx";
 export const ViewJournal = () => {
   const [journalList, setJournalList] = useState([]);
 
+  const { state } = useLocation();
 
   const navigate = useNavigate();
 
   useEffect(() => {
-    getJournalsByUserId(1).then((journals) => {
+    getJournalsByUserId(state.userId).then((journals) => {
       const sortedJournal = journals.sort((a, b) => (a.date > b.date ? -1 : 1));
       setJournalList(sortedJournal);
     });
