@@ -5,6 +5,7 @@ import { useNavigate } from "react-router-dom";
 import {
   getJournalByViewcode,
 } from "../../services/viewerService.jsx";
+import { getJournalsByUserId } from "../../services/journalService.jsx";
 
 
 export const ViewJournal = () => {
@@ -14,7 +15,7 @@ export const ViewJournal = () => {
   const navigate = useNavigate();
 
   useEffect(() => {
-    getJournalByViewcode("30aac41b-1bf0-48df-9b83-cde9cd12baef").then((journals) => {
+    getJournalsByUserId(1).then((journals) => {
       const sortedJournal = journals.sort((a, b) => (a.date > b.date ? -1 : 1));
       setJournalList(sortedJournal);
     });
