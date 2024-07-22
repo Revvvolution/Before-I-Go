@@ -1,4 +1,17 @@
-# React + Vite
+# React + Vite Web Application Project
+
+## Before I Go
+### Digital Family Memory Platform Project
+
+## Purpose:
+o    Enable loved ones to remember and learn about their predecessors.
+o    Provide a focused, private space for cherished memories.
+o    Avoid cluttered social media threads.
+
+
+
+
+
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
