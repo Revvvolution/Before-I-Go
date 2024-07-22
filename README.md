@@ -4,9 +4,9 @@
 ### Digital Family Memory Platform Project
 
 ## Purpose:
-o    Enable loved ones to remember and learn about their predecessors.
-o    Provide a focused, private space for cherished memories.
-o    Avoid cluttered social media threads.
+- Enable loved ones to remember and learn about their predecessors.
+- Provide a focused, private space for cherished memories.
+- Avoid cluttered social media threads.
 
 
 
