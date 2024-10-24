@@ -82,3 +82,52 @@
   background-color: var(--buff);
   text-shadow: -0.75px 0.75px var(--jet);
 }
+
+.photo-memory-page {
+  width: 100%;
+  height: fit-content;
+}
+
+.memory-card {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  margin-left: 1rem;
+  font-size: 20px;
+  position: relative;
+  padding-top: 1.5rem;
+}
+
+.photo-memory-edit,
+.photo-memory-delete {
+  position: absolute;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.photo-memory-edit {
+  left: 3rem;
+  top: 0.75rem;
+}
+
+.photo-memory-edit:hover {
+  cursor: pointer;
+  text-decoration: underline;
+  color:rgb(236, 221, 200);
+  text-shadow: 1px 1px var(--jet);
+}
+
+.photo-memory-delete {
+  right: 3rem;
+  top: 0.75rem;
+}
+
+.photo-memory-delete:hover {
+  cursor: pointer;
+  color:var(--buff);
+  text-shadow: 1px 1px var(--jet);
+}
+
+.memory-card:hover .photo-memory-edit,
+.memory-card:hover .photo-memory-delete {
+  opacity: 1;
+}
