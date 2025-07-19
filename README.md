@@ -23,7 +23,8 @@ Currently, two official plugins are available:
 1. Open the terminal and navigate (cd) into this project's 'api' directory
 2. Run command 'json-server -p 8088 database.json'
 3. You should see the following:
-        Resources
+   ```
+      Resources
       http://localhost:8088/users
       http://localhost:8088/journals
       http://localhost:8088/photo-memories
@@ -31,12 +32,13 @@ Currently, two official plugins are available:
     
       Home
       http://localhost:8088
-4. While this terminal is running the api, **open a second terminal** and navigate (cd) into this project's top level directory
-5. run command 'npm run dev'
-6. You should see the following:
-     Local:   http://localhost:5173/
-7. Open your browser (Chrome preferred). In your URL bar, enter 'http://localhost:5173/login'
-8. You should now see the login page for the application
+   ```
+5. While this terminal is running the api, **open a second terminal** and navigate (cd) into this project's top level directory
+6. run command 'npm run dev'
+7. You should see the following:
+     ```Local:   http://localhost:5173/```
+8. Open your browser (Chrome preferred). In your URL bar, enter 'http://localhost:5173/login'
+9. You should now see the login page for the application
 10. You should also open a new tab and navigate to the api resource: 'http://localhost:8088/users' for test login credential information
 11. Enter the email address of a user within the database to see example use cases or click the Register link and create your own profile
 12. Try out some of the CRUD features of the application. Enjoy!
