@@ -12,7 +12,7 @@
       "name": "Jerome Johnson",
       "email": "Jerome.Johnson62@example.com",
       "password": "99TF_utvE6LP1mk",
-      "viewcode": "581f054b-4623-435c-928c-d37b960125df"
+      "viewcode": "08c8ae65-33e4-471c-80d4-0dbf7f306a44"
     },
     {
       "id": 3,
@@ -174,6 +174,13 @@
       "viewcode": "ee36ebeb-ab04-4cc7-a246-bde0f7b9caa9",
       "image": "https://images.unsplash.com/photo-1590527548172-295fdcb1bab0?q=80&w=1888&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       "comment": "Eos et dolore natus a facilis. Nulla nostrum vel nihil enim et molestiae aut aut. Magnam minus et velit temporibus architecto."
+    },
+    {
+      "id": 10,
+      "userId": 2,
+      "viewcode": "f08132c9-dd8b-4fcb-93b0-33d0f968fb49",
+      "image": "https://images.unsplash.com/photo-1501426026826-31c667bdf23d?q=80&w=1936&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "comment": "Remember insisting on the flamingo float at the shop? No one got on it, but I DID get some great photos with my phone...until it fell in the water for a second. Glad it ended up being water-resistant!\n"
     }
   ],
   "about-me": [
@@ -246,6 +253,13 @@
       "viewcode": "23632a41-ccd4-4b62-9c0a-8cb064bfb7c8",
       "title": "My Favorite Movies",
       "entry": "I adore three quirky '80s and '90s films:\n\n- “Buckaroo Banzai”: Brain surgery meets epic guitar solos, and evil aliens? Just misunderstood dance enthusiasts.\n- “Aliens”: Ellen Ripley’s survival skills involve xenomorph juggling and sassy one-liners. Extraterrestrial diplomacy, anyone?\n- “The Terminator”: Forget the apocalypse; focus on the forbidden love and molten steel. Schwarzenegger impressions included.\nLife’s too short for serious sci-fi—pass the popcorn and let’s watch “E.T.”!"
+    },
+    {
+      "id": 11,
+      "userId": 2,
+      "viewcode": "f08132c9-dd8b-4fcb-93b0-33d0f968fb49",
+      "title": "To My Family",
+      "entry": "As I pen these words, my heart swells with love—a love that transcends time, space, and the ordinary. Maya, you are my compass, guiding me through life’s storms with grace and unwavering strength. Your laughter, like sunlight filtering through leaves, warms my soul. Xavier, my little star, you’ve taught me that courage comes in pint-sized packages. Your eyes reflect galaxies of possibility, and I promise to be your cosmic co-pilot, navigating the unknown together.\n\nMaya, my partner in this wild adventure, you are my sanctuary. When life’s claws dig deep, you’re my healing balm. Our love story—woven with threads of late-night talks, shared dreams, and stolen kisses—is my favorite tale. And Xavier, my mini-Wolverine, you’ve inherited our superpowers: resilience, kindness, and a dash of mischief. As you grow, remember that the world is both battleground and wonderland. Embrace both.\n\nSo here’s to us—the Johnson trio—bound by love, laughter, and a touch of magic. Let’s keep cosplaying through life, capturing memories like rare Pokémon. Maya, keep shining; Xavier, keep exploring. And me? Well, I’ll be right here, ready to lift you both on my adamantium shoulders whenever you need it.\n\nWith all my heart, Jerome 🌟❤️\n"
     }
   ]
 }
